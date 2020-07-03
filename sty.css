@@ -1,0 +1,12 @@
+body div.container {
+    max-width: 35rem;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.custom-control-label::before {
+    background-color: transparent;
+    border: 2px solid #dee2e6;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="sty.css">
+    <title>TodoApp</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- site title -->
+        <header class="text-center my-4">
+            <h1 class="display-3">TodoApp</h1>
+        </header>
+
+        <!-- card -->
+        <div class="card">
+            <!-- card header -->
+            <div class="card-header d-flex flex-row">
+                <button type="button" class="btn btn-primary mr-3">All done</button>
+                <div class="form-group mb-0 flex-grow">
+                    <input type="text" class="form-control" placeholder="Add todo here">
+                </div>
+            </div>
+
+            <!-- card body -->
+            <div class="card-body p-0">
+                <ul class="list-group list-group-flush">
+
+                    <!-- Todo template -->
+                    <li class="list-group-item d-flex flex-row align-items-center">
+
+                        <!-- todo.completed -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1"></label>
+                        </div>
+
+                        <!-- todo.name - view -->
+                        <span>todo 1</span>
+
+                        <!-- todo.name - edit -->
+                        <div class="form-group mb-0 flex-grow">
+                            <input type="text" class="form-control" value="todo 1">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- card footer -->
+            <div class="card-footer text-muted d-flex flex-row justify-content-between">
+                <!-- counter -->
+                <span>123 items left</span>
+
+                <!-- filters -->
+                <div>
+                    <button type="button" class="btn btn-sm btn-secondary">All</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Active</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Compoeted</button>
+                </div>
+
+                <!-- remove completed -->
+                <button type="button" class="btn btn-sm btn-link">Remove compoeted</button>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
